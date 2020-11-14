@@ -1,3 +1,23 @@
 body {
   font-family: var(--main-ff);
 }
+
+html {
+  background: url(assets/bg-image.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.page-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}

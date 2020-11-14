@@ -1,10 +1,10 @@
 // CSS variables for the entire site
 :root {
   // Backgrounds
-  --lightest-bg: #fcfcfc;
-  --darkest-bg: #101010;
-  --light-md-bg: #555;
-  --dark-md-bg: #282828;
+  --lightest-bg: rgba(252, 252, 252, 0.925);
+  --darkest-bg: rgba(16, 16, 16, 0.99);
+  --light-md-bg: rgba(85, 85, 85, 0.925);
+  --dark-md-bg: rgba(40, 40, 40, 1);
 
   // Text
   --lightest-color: #fff;
