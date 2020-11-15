@@ -44,12 +44,17 @@
     white-space: nowrap;
 
     @media screen and (max-width: 800px) {
-      margin: 0;
+      margin: 0 4rem;
       white-space: normal;
     }
 
     @media screen and (max-width: 600px) {
-      padding: 8rem 2rem;
+      padding: 4rem 2rem;
+      margin: 0 0.5rem;
+
+      h3 {
+        white-space: nowrap;
+      }
     }
 
     .personal-info-list {

@@ -16,11 +16,23 @@ html { background: url(assets/bg-image.jpg) no-repeat center center fixed; backg
 
 .page-container { max-width: 1300px; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; }
 
+.page-container > * { padding: 8rem 15%; }
+
+@media screen and (max-width: 1050px) { .page-container > * { padding: 8rem 12.5%; } }
+
+@media screen and (max-width: 920px) { .page-container > * { padding: 8rem 10%; } }
+
+@media screen and (max-width: 800px) { .page-container > * { padding: 8rem 5%; } }
+
+@media screen and (max-width: 800px) { .page-container > * { padding: 8rem 0; } }
+
+.page-container > *:first-child { padding: 0; }
+
+@media screen and (max-width: 600px) { .page-container > *:first-child { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; padding: 8rem 0; } }
+
 h3 { font-size: 1.5rem; margin-bottom: 1rem; }
 
 .banner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: var(--lightest-bg); }
-
-@media screen and (max-width: 600px) { .banner { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; padding: 8rem 0; } }
 
 .banner .profile-pic-container { padding: 2rem 4rem; background-color: var(--darkest-bg); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -78,9 +90,10 @@ h3 { font-size: 1.5rem; margin-bottom: 1rem; }
 
 .about .personal-info { margin: 0 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: var(--darkest-bg); border-radius: 2px; padding: 4rem; white-space: nowrap; }
 
-@media screen and (max-width: 800px) { .about .personal-info { margin: 0; white-space: normal; } }
+@media screen and (max-width: 800px) { .about .personal-info { margin: 0 4rem; white-space: normal; } }
 
-@media screen and (max-width: 600px) { .about .personal-info { padding: 8rem 2rem; } }
+@media screen and (max-width: 600px) { .about .personal-info { padding: 4rem 2rem; margin: 0 0.5rem; }
+  .about .personal-info h3 { white-space: nowrap; } }
 
 .about .personal-info .personal-info-list { font-size: 1.15rem; }
 
@@ -92,3 +105,5 @@ h3 { font-size: 1.5rem; margin-bottom: 1rem; }
 
 @media screen and (max-width: 800px) { .about .personal-info .personal-info-list strong { display: block; margin-bottom: 0.75rem; }
   .about .personal-info .personal-info-list > li { text-align: center; margin-top: 2.5rem; } }
+
+.work-experience { background-color: var(--lightest-bg); }
