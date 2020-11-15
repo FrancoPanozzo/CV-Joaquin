@@ -1,3 +1,19 @@
 .work-experience {
   background-color: var(--lightest-bg);
+  text-align: center;
+
+  .work-experience-list {
+    li {
+      margin-top: 1.5rem;
+      font-size: 1.15rem;
+
+      strong {
+        margin-bottom: 0.5rem;
+        display: inline-block;
+      }
+    }
+    li:first-child {
+      margin-top: 0;
+    }
+  }
 }

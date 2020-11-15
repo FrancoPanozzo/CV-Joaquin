@@ -30,7 +30,9 @@ html { background: url(assets/bg-image.jpg) no-repeat center center fixed; backg
 
 @media screen and (max-width: 600px) { .page-container > *:first-child { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; padding: 8rem 0; } }
 
-h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+h3 { font-size: 1.5rem; margin-bottom: 2rem; }
+
+h2 { font-size: 2rem; margin-bottom: 4rem; }
 
 .banner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: var(--lightest-bg); }
 
@@ -106,4 +108,10 @@ h3 { font-size: 1.5rem; margin-bottom: 1rem; }
 @media screen and (max-width: 800px) { .about .personal-info .personal-info-list strong { display: block; margin-bottom: 0.75rem; }
   .about .personal-info .personal-info-list > li { text-align: center; margin-top: 2.5rem; } }
 
-.work-experience { background-color: var(--lightest-bg); }
+.work-experience { background-color: var(--lightest-bg); text-align: center; }
+
+.work-experience .work-experience-list li { margin-top: 1.5rem; font-size: 1.15rem; }
+
+.work-experience .work-experience-list li strong { margin-bottom: 0.5rem; display: inline-block; }
+
+.work-experience .work-experience-list li:first-child { margin-top: 0; }
