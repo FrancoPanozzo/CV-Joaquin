@@ -115,3 +115,7 @@ h2 { font-size: 2rem; margin-bottom: 4rem; }
 .work-experience .work-experience-list li strong { margin-bottom: 0.5rem; display: inline-block; }
 
 .work-experience .work-experience-list li:first-child { margin-top: 0; }
+
+.education { background-color: var(--light-md-bg); color: var(--lightest-color); padding: 8rem 15%; }
+
+.education ul li { margin-top: 1.5rem; }
