@@ -4,26 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joaquín Molina</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-container">
-      <!-- Top banner -->
-      <div class="banner">
-        <div class="profile-pic-container">
-          <img src="./assets/profile-pic.jpg" alt="Profile picture" />
-        </div>
-        <div class="main-title-container">
-          <h1>
-            Joaquín<br />Molina<a
-              href="./assets/CV Joaquin Molina.pdf"
-              download="CV Joaquin Molina.pdf"
-              >CV</a
-            >
-          </h1>
-        </div>
+    <!-- Navbar -->
+    <header class="header fixed active">
+      <div class="bar">
+        <div class="logo title">Joaquín<br />Molina</div>
+        <button class="nav-toggle">&equiv;</button>
       </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="">Sobre mi</a></li>
+          <li><a href="">experiencia</a></li>
+          <li><a href="">Formación</a></li>
+          <li><a href="">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <div class="page-container">
+      <div class="bg-img">
+        <img
+          src="./assets/profile-pic.jpg"
+          alt="Foto perfil de Joaquín Molina"
+        />
+      </div>
+      <div class="banner">
+        <h1>Joaquín<br />Molina</h1>
+        <span class="subtitle">Técnico en Energías Renovables</span>
+      </div>
       <!-- About section -->
       <section class="about">
         <!-- About me -->

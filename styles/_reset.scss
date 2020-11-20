@@ -14,13 +14,29 @@ ul {
 }
 
 a {
-  color: tomato;
+  color: var(--highlight-color);
+  text-decoration: none;
+}
 
-  &:visited {
-    color: tomato;
+button,
+.button {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 64px;
+  padding: 0.5em 1em;
+  transition: border-color 0.1s ease-in-out;
+  &:focus {
+    outline: none;
   }
-
   &:hover {
-    color: salmon;
+    border: 1px solid var(--highlight-color);
   }
 }
