@@ -16,6 +16,9 @@
   }
   .logo {
     font-size: 1.25em;
+    &.title {
+      padding-bottom: 0;
+    }
   }
   .nav-toggle {
     height: 65px;

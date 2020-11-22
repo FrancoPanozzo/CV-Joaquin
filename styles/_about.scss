@@ -1,2 +1,29 @@
 .about {
+  text-align: center;
+  .about-me {
+    p {
+      &:first-of-type {
+        margin: 0 auto 4rem;
+        max-width: 95%;
+      }
+      margin-bottom: 4rem;
+      strong {
+        display: inline-block;
+        margin-bottom: 0.75rem;
+      }
+    }
+  }
+  .personal-info {
+    strong {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    li {
+      margin-bottom: 0.75rem;
+    }
+
+    .personal-info-list > * {
+      margin-bottom: 1.5rem;
+    }
+  }
 }

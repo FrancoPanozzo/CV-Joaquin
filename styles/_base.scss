@@ -11,13 +11,16 @@ body {
   flex-flow: column nowrap;
 
   & > * {
-    padding: 0 10px 8rem;
+    padding: 4rem 10px;
+    border-bottom: 1px solid var(--medium-bg);
+    transform: translateY(-6rem);
 
-    &:first-child {
-      padding-bottom: 0;
+    &:nth-child(2) {
+      padding-top: 0;
     }
     &:last-child {
-      padding-bottom: 4rem;
+      padding-bottom: 0;
+      border-bottom: none;
     }
   }
 }
