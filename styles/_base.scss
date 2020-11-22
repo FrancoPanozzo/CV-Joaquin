@@ -9,6 +9,17 @@ body {
   margin: 0 auto;
   display: flex;
   flex-flow: column nowrap;
+
+  & > * {
+    padding: 0 10px 8rem;
+
+    &:first-child {
+      padding-bottom: 0;
+    }
+    &:last-child {
+      padding-bottom: 4rem;
+    }
+  }
 }
 
 h3 {
