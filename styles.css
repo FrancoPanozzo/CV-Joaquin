@@ -77,3 +77,13 @@ h2 { font-size: 2rem; }
 .about .personal-info li { margin-bottom: 0.75rem; }
 
 .about .personal-info .personal-info-list > * { margin-bottom: 1.5rem; }
+
+.work-experience { text-align: center; }
+
+.work-experience strong, .work-experience span { display: block; margin-bottom: 0.5rem; }
+
+.work-experience .extra-space { margin-bottom: 1rem; }
+
+.work-experience span:last-child { margin-bottom: 1.5rem; }
+
+.work-experience li { margin-bottom: 0.75rem; }
