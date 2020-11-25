@@ -33,3 +33,12 @@ const handleScroll = () => {
 };
 
 document.addEventListener('scroll', handleScroll, { passive: true });
+
+// Functionality to close the navbar when a nav link is clicked
+const closeNavbar = (e) => {
+  // Checks if an acnhor tag is clicked
+  if (e.target.tagName.toLowerCase() !== 'a') return;
+  header.classList.remove('active');
+};
+
+document.querySelector('.nav-menu').addEventListener('click', closeNavbar);
