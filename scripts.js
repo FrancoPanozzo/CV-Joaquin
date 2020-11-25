@@ -8,6 +8,7 @@ navToggleBtn.addEventListener('click', () => {
   if (!navIsFixed) {
     header.classList.add('fixed');
   }
+  handleScroll();
 });
 
 // Fucntionality to fix the navbar when scrolled
@@ -24,12 +25,14 @@ const debounce = (fn) => {
 };
 
 const handleScroll = () => {
-  console.log(window.scrollY);
-  if (window.scrollY > 50) {
-    header.classList.add('fixed');
-  } else {
-    header.classList.remove('fixed');
-  }
+  // don't action if the navbar is on active state
+  if (Array.from(header.classList).includes('active')) return;
+  if (header.className)
+    if (window.scrollY > 50) {
+      header.classList.add('fixed');
+    } else {
+      header.classList.remove('fixed');
+    }
 };
 
 document.addEventListener('scroll', handleScroll, { passive: true });
