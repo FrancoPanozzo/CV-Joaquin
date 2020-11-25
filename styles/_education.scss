@@ -1,2 +1,17 @@
 .education {
+  text-align: center;
+  strong,
+  span {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  .extra-space {
+    margin-bottom: 1rem;
+  }
+  span:last-child {
+    margin-bottom: 1.5rem;
+  }
+  li {
+    margin-bottom: 0.75rem;
+  }
 }

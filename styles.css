@@ -87,3 +87,13 @@ h2 { font-size: 2rem; }
 .work-experience span:last-child { margin-bottom: 1.5rem; }
 
 .work-experience li { margin-bottom: 0.75rem; }
+
+.education { text-align: center; }
+
+.education strong, .education span { display: block; margin-bottom: 0.5rem; }
+
+.education .extra-space { margin-bottom: 1rem; }
+
+.education span:last-child { margin-bottom: 1.5rem; }
+
+.education li { margin-bottom: 0.75rem; }
