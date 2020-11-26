@@ -99,3 +99,7 @@ h2 { font-size: 2rem; }
 .education span:last-child { margin-bottom: 1.5rem; }
 
 .education li { margin-bottom: 0.75rem; }
+
+.contact { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.contact li { margin-bottom: 0.75rem; }
