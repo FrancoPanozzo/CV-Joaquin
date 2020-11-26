@@ -10,6 +10,9 @@
       strong {
         display: inline-block;
         margin-bottom: 0.75rem;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -20,6 +23,13 @@
     }
     li {
       margin-bottom: 0.75rem;
+
+      &:last-child {
+        margin-bottom: 0;
+        span:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
 
     .personal-info-list > * {
