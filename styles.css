@@ -58,9 +58,7 @@ h2 { font-size: 2rem; }
 
 .header.active .nav-menu { opacity: 1; height: 100%; }
 
-.bg-img { position: relative; overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 75vh; }
-
-.bg-img img { position: absolute; top: 0; height: 140vh; -webkit-transform: translate(4%, -15%); transform: translate(4%, -15%); }
+.bg-img { overflow: hidden; height: 75vh; width: 110vw; background-image: url(../assets//profile-pic.jpg); background-repeat: no-repeat; background-position: center 30%; background-size: cover; }
 
 .banner { -webkit-transform: translateY(-50%); transform: translateY(-50%); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
