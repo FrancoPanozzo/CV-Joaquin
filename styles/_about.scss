@@ -5,6 +5,9 @@
       &:first-of-type {
         margin: 0 auto 4rem;
         max-width: 95%;
+        @media screen and (min-width: 800px) {
+          max-width: 600px;
+        }
       }
       margin-bottom: 4rem;
       strong {
@@ -17,6 +20,15 @@
     }
   }
   .personal-info {
+    @media screen and (min-width: 800px) {
+      > ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          flex: 0 0 50%;
+        }
+      }
+    }
     strong {
       display: block;
       margin-bottom: 0.5rem;

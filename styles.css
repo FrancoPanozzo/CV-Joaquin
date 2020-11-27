@@ -70,9 +70,14 @@ h2 { font-size: 2rem; }
 
 .about .about-me p:first-of-type { margin: 0 auto 4rem; max-width: 95%; }
 
+@media screen and (min-width: 800px) { .about .about-me p:first-of-type { max-width: 600px; } }
+
 .about .about-me p strong { display: inline-block; margin-bottom: 0.75rem; }
 
 .about .about-me p strong:last-of-type { margin-bottom: 0; }
+
+@media screen and (min-width: 800px) { .about .personal-info > ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .about .personal-info > ul li { -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; } }
 
 .about .personal-info strong { display: block; margin-bottom: 0.5rem; }
 
