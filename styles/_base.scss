@@ -2,6 +2,7 @@ body {
   font-family: var(--ff);
   color: var(--text);
   background-color: var(--dark-bg);
+  overflow-x: hidden;
 }
 
 .page-container {

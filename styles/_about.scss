@@ -22,6 +22,7 @@
   .personal-info {
     @media screen and (min-width: 800px) {
       > ul {
+        padding: 0 2rem;
         display: flex;
         flex-wrap: wrap;
         li {
