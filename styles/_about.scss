@@ -1,15 +1,16 @@
 .about {
   text-align: center;
+  .title {
+    padding-bottom: 1.5rem;
+  }
   .about-me {
     p {
-      &:first-of-type {
-        margin: 0 auto 4rem;
-        max-width: 95%;
-        @media screen and (min-width: 800px) {
-          max-width: 600px;
-        }
+      margin: 0 auto 6rem;
+      max-width: 95%;
+      @media screen and (min-width: 800px) {
+        max-width: 600px;
       }
-      margin-bottom: 4rem;
+
       strong {
         display: inline-block;
         margin-bottom: 0.75rem;
