@@ -20,6 +20,12 @@ body {
     border-bottom: 1px solid var(--medium-bg);
     transform: translateY(-6rem);
 
+    @media screen and (min-width: 975px) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      transform: none;
+    }
+
     &:nth-child(2) {
       padding-top: 0;
     }

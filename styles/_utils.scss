@@ -6,6 +6,9 @@
   text-align: center;
   padding: 0 10px;
   padding-bottom: 3rem;
+  @media screen and (min-width: 975px) {
+    text-align: left;
+  }
 }
 
 .subtitle {
