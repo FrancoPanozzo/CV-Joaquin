@@ -5,4 +5,14 @@
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: cover;
+
+  @media screen and (min-width: 975px) {
+    height: auto;
+    width: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 70%;
+  }
 }

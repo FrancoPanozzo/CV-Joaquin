@@ -11,6 +11,10 @@ body {
   display: flex;
   flex-flow: column nowrap;
 
+  @media screen and (min-width: 975px) {
+    margin-left: 30%;
+  }
+
   & > * {
     padding: 6rem 10px;
     border-bottom: 1px solid var(--medium-bg);
