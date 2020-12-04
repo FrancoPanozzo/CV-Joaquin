@@ -32,7 +32,7 @@
     font-size: 1.25em;
     @media screen and (min-width: 975px) {
       text-align: left;
-      margin-left: 10px;
+      margin-left: 20px;
     }
     &.title {
       padding-bottom: 0;
@@ -116,8 +116,26 @@
         font-size: 1.2em;
         color: inherit;
         transition: none;
+        position: relative;
+        transition: color 0.075s ease-in-out;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          z-index: -1;
+          border-bottom: 10px solid var(--dark-bg);
+          transition: max-width 0.175s ease-in-out;
+          max-width: 0;
+        }
         &:hover {
           color: var(--highlight-color);
+
+          &::after {
+            max-width: 100%;
+          }
         }
         @media screen and (min-width: 975px) {
           font-size: 0.8em;

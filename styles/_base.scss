@@ -21,17 +21,22 @@ body {
     transform: translateY(-6rem);
 
     @media screen and (min-width: 975px) {
-      padding-left: 3rem;
-      padding-right: 3rem;
+      padding: 9rem 3rem;
       transform: none;
     }
 
     &:nth-child(2) {
       padding-top: 0;
+      @media screen and (min-width: 975px) {
+        padding: 9rem 3rem;
+      }
     }
     &:last-child {
       padding-bottom: 0;
       border-bottom: none;
+      @media screen and (min-width: 975px) {
+        padding: 9rem 3rem;
+      }
     }
   }
 }

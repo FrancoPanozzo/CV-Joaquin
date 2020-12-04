@@ -2,6 +2,9 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+  @media screen and (min-width: 975px) {
+    align-items: flex-start;
+  }
 
   li {
     margin-bottom: 1.25rem;

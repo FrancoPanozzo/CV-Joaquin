@@ -2,6 +2,9 @@
   text-align: center;
   .title {
     padding-bottom: 1.5rem;
+    @media screen and (min-width: 975px) {
+      padding-bottom: 4.5rem;
+    }
   }
   .about-me {
     p {
@@ -9,6 +12,10 @@
       max-width: 95%;
       @media screen and (min-width: 800px) {
         max-width: 600px;
+      }
+      @media screen and (min-width: 975px) {
+        max-width: max-content;
+        margin-bottom: 9rem;
       }
 
       strong {
