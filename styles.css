@@ -62,7 +62,13 @@ h2 { font-size: 2rem; }
 
 @media screen and (min-width: 975px) { .header .logo { text-align: left; margin-left: 20px; } }
 
-.header .logo.title { padding-bottom: 0; }
+.header .logo.title { padding-bottom: 0; color: var(--text); position: relative; -webkit-transition: color 0.075s ease-in-out; transition: color 0.075s ease-in-out; }
+
+.header .logo.title::after { content: ''; position: absolute; top: 0; bottom: 0; right: 0; left: 0; z-index: -1; border-bottom: 10px solid var(--dark-bg); -webkit-transition: max-width 0.175s ease-in-out; transition: max-width 0.175s ease-in-out; max-width: 0; }
+
+.header .logo.title:hover { color: var(--highlight-color); }
+
+.header .logo.title:hover::after { max-width: 100%; }
 
 .header .nav-toggle { height: 65px; width: 65px; -webkit-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; border-color: inherit; }
 
@@ -88,7 +94,7 @@ h2 { font-size: 2rem; }
 
 @media screen and (min-width: 975px) { .header .nav-menu ul li { padding-bottom: 0; margin-right: 1.25em; } }
 
-.header .nav-menu ul li a { text-transform: uppercase; font-weight: 800; font-size: 1.2em; color: inherit; -webkit-transition: none; transition: none; position: relative; -webkit-transition: color 0.075s ease-in-out; transition: color 0.075s ease-in-out; }
+.header .nav-menu ul li a { text-transform: uppercase; font-weight: 800; font-size: 1.2em; color: inherit; position: relative; -webkit-transition: color 0.075s ease-in-out; transition: color 0.075s ease-in-out; }
 
 .header .nav-menu ul li a::after { content: ''; position: absolute; top: 0; bottom: 0; right: 0; left: 0; z-index: -1; border-bottom: 10px solid var(--dark-bg); -webkit-transition: max-width 0.175s ease-in-out; transition: max-width 0.175s ease-in-out; max-width: 0; }
 
