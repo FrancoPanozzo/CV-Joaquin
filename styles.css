@@ -120,24 +120,25 @@ h2 { font-size: 2rem; }
 
 @media screen and (min-width: 800px) { .about .about-me p { max-width: 600px; } }
 
-@media screen and (min-width: 975px) { .about .about-me p { max-width: -webkit-max-content; max-width: -moz-max-content; max-width: max-content; margin-bottom: 9rem; } }
+@media screen and (min-width: 975px) { .about .about-me p { max-width: 650px; margin-bottom: 9rem; text-align: left; margin: 0 0 6rem; } }
 
-.about .about-me p strong { display: inline-block; margin-bottom: 0.75rem; }
+.about .about-me p strong { font-size: 1.15em; display: inline-block; margin-bottom: 1.5rem; }
 
 .about .about-me p strong:last-of-type { margin-bottom: 0; }
 
-@media screen and (min-width: 800px) { .about .personal-info > ul { padding: 0 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  .about .personal-info > ul li { -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; } }
+.about .personal-info .personal-info-list strong { display: block; margin-bottom: 0.5rem; }
 
-.about .personal-info strong { display: block; margin-bottom: 0.5rem; }
+.about .personal-info .personal-info-list li { margin-bottom: 0.75rem; }
 
-.about .personal-info li { margin-bottom: 0.75rem; }
+.about .personal-info .personal-info-list li:last-child { margin-bottom: 0; }
 
-.about .personal-info li:last-child { margin-bottom: 0; }
+.about .personal-info .personal-info-list > li { margin-bottom: 1.5rem; }
 
-.about .personal-info li:last-child span:last-child { margin-bottom: 0; }
+@media screen and (min-width: 800px) { .about .personal-info .personal-info-list { padding: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .about .personal-info .personal-info-list > li { -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; } }
 
-.about .personal-info .personal-info-list > * { margin-bottom: 1.5rem; }
+@media screen and (min-width: 975px) { .about .personal-info .personal-info-list > li { margin-bottom: 2.5rem; }
+  .about .personal-info .personal-info-list li { text-align: left; } }
 
 .work-experience { text-align: center; }
 

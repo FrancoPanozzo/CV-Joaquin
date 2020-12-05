@@ -14,13 +14,16 @@
         max-width: 600px;
       }
       @media screen and (min-width: 975px) {
-        max-width: max-content;
+        max-width: 650px;
         margin-bottom: 9rem;
+        text-align: left;
+        margin: 0 0 6rem;
       }
 
       strong {
+        font-size: 1.15em;
         display: inline-block;
-        margin-bottom: 0.75rem;
+        margin-bottom: 1.5rem;
         &:last-of-type {
           margin-bottom: 0;
         }
@@ -28,33 +31,41 @@
     }
   }
   .personal-info {
-    @media screen and (min-width: 800px) {
-      > ul {
-        padding: 0 2rem;
-        display: flex;
-        flex-wrap: wrap;
-        li {
-          flex: 0 0 50%;
-        }
+    .personal-info-list {
+      strong {
+        display: block;
+        margin-bottom: 0.5rem;
       }
-    }
-    strong {
-      display: block;
-      margin-bottom: 0.5rem;
-    }
-    li {
-      margin-bottom: 0.75rem;
 
-      &:last-child {
-        margin-bottom: 0;
-        span:last-child {
+      li {
+        margin-bottom: 0.75rem;
+
+        &:last-child {
           margin-bottom: 0;
         }
       }
-    }
 
-    .personal-info-list > * {
-      margin-bottom: 1.5rem;
+      > li {
+        margin-bottom: 1.5rem;
+      }
+
+      @media screen and (min-width: 800px) {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        > li {
+          flex: 0 0 50%;
+        }
+      }
+
+      @media screen and (min-width: 975px) {
+        > li {
+          margin-bottom: 2.5rem;
+        }
+        li {
+          text-align: left;
+        }
+      }
     }
   }
 }
