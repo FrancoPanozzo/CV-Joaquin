@@ -7,7 +7,41 @@
   }
 
   li {
-    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.75rem;
+
+    svg {
+      width: 1em;
+      margin-right: 5px;
+    }
+
+    a {
+      margin-left: 10px;
+
+      position: relative;
+      transition: color 0.075s ease-in-out;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        border-bottom: 5px solid rgb(41, 41, 41);
+        transition: max-width 0.175s ease-in-out;
+        max-width: 0;
+      }
+      &:hover {
+        // color: var(--text);
+
+        &::after {
+          max-width: 100%;
+        }
+      }
+    }
 
     &:last-child {
       margin-bottom: 0;
