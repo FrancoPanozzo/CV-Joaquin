@@ -145,6 +145,10 @@ h2 { font-size: 2rem; }
 @media screen and (min-width: 800px) { .work-experience > ul { padding: 0 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .work-experience > ul li { -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; } }
 
+@media screen and (min-width: 975px) { .work-experience > ul { padding: 0; }
+  .work-experience > ul > li { margin-bottom: 2.5rem; }
+  .work-experience > ul li { text-align: left; } }
+
 .work-experience strong, .work-experience span { display: block; margin-bottom: 0.5rem; }
 
 .work-experience .extra-space { margin-bottom: 1rem; }
@@ -161,6 +165,10 @@ h2 { font-size: 2rem; }
 
 @media screen and (min-width: 800px) { .education > ul { padding: 0 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .education > ul li { -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; } }
+
+@media screen and (min-width: 975px) { .education > ul { padding: 0; }
+  .education > ul > li { margin-bottom: 2.5rem; }
+  .education > ul li { text-align: left; } }
 
 .education strong, .education span { display: block; margin-bottom: 0.5rem; }
 
