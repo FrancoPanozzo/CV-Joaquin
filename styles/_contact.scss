@@ -11,6 +11,14 @@
     align-items: center;
     margin-bottom: 1.75rem;
 
+    span {
+      display: none;
+
+      @media screen and (min-width: 800px) {
+        display: inline;
+      }
+    }
+
     svg {
       width: 1em;
       margin-right: 5px;
@@ -18,9 +26,9 @@
 
     a {
       margin-left: 10px;
-
       position: relative;
       transition: color 0.075s ease-in-out;
+
       &::after {
         content: '';
         display: block;
@@ -34,12 +42,8 @@
         transition: max-width 0.175s ease-in-out;
         max-width: 0;
       }
-      &:hover {
-        // color: var(--text);
-
-        &::after {
-          max-width: 100%;
-        }
+      &:hover::after {
+        max-width: 100%;
       }
     }
 

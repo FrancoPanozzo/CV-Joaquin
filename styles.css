@@ -40,7 +40,7 @@ h2 { font-size: 2rem; }
 
 .highlighted-text, .subtitle { color: var(--highlight-color); text-transform: uppercase; font-weight: 600; }
 
-.website-made-by { font-size: 0.75em; padding: 8px; text-align: right; position: fixed; bottom: 0; width: 100%; color: var(--text); cursor: default; }
+.website-made-by { font-size: 0.75em; padding: 8px; text-align: right; position: fixed; bottom: 0; right: 0; left: 0; color: var(--text); cursor: default; }
 
 @media screen and (max-width: 800px) { .website-made-by { text-align: center; } }
 
@@ -113,7 +113,7 @@ h2 { font-size: 2rem; }
 
 .header.active .nav-menu { opacity: 1; height: 100%; }
 
-.bg-img { height: 75vh; width: 110vw; background-image: url(../assets//profile-pic.jpg); background-repeat: no-repeat; background-position: center 30%; background-size: cover; }
+.bg-img { height: 75vh; width: 100vw; background-image: url(../assets//profile-pic.jpg); background-repeat: no-repeat; background-position: center 30%; background-size: cover; }
 
 @media screen and (min-width: 975px) { .bg-img { height: auto; width: auto; position: fixed; top: 0; bottom: 0; left: 0; right: 70%; } }
 
@@ -139,7 +139,7 @@ h2 { font-size: 2rem; }
 
 @media screen and (min-width: 975px) { .about .about-me p { max-width: 650px; margin-bottom: 9rem; text-align: left; margin: 0 0 6rem; } }
 
-.about .about-me p strong { font-size: 1.15em; display: inline-block; margin-bottom: 1.5rem; }
+.about .about-me p strong { display: inline-block; margin-bottom: 1.5rem; }
 
 .about .about-me p strong:last-of-type { margin-bottom: 0; }
 
@@ -204,6 +204,10 @@ h2 { font-size: 2rem; }
 @media screen and (min-width: 975px) { .contact { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; } }
 
 .contact li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 1.75rem; }
+
+.contact li span { display: none; }
+
+@media screen and (min-width: 800px) { .contact li span { display: inline; } }
 
 .contact li svg { width: 1em; margin-right: 5px; }
 

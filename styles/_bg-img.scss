@@ -1,11 +1,10 @@
 .bg-img {
   height: 75vh;
-  width: 110vw;
+  width: 100vw;
   background-image: url(../assets//profile-pic.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: cover;
-  // filter: saturate(50%);
 
   @media screen and (min-width: 975px) {
     height: auto;
