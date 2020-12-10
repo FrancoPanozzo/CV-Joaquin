@@ -10,6 +10,8 @@ button:focus, .button:focus { outline: none; }
 
 :root { --dark-bg: #373b40; --medium-bg: #585d65; --text: white; --highlight-color: #ffd460; --ff: 'Poppins', sans-serif; }
 
+html { scroll-behavior: smooth; }
+
 body { font-family: var(--ff); color: var(--text); background-color: var(--dark-bg); overflow-x: hidden; }
 
 .page-container { max-width: 1300px; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; }
